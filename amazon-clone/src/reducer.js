@@ -19,6 +19,12 @@ export const addTax = (amount) => {
     
 export const reducer = (state, action) => {
     switch(action.type){
+        case 'EMPTY_BASKET':
+            return{
+                ...state,
+                basket: [...state.basket, action.item] 
+            }
+            break;
         case 'ADD_TO_BASKET':
             return {
                 ...state,
