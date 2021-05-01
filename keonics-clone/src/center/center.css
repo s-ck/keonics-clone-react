@@ -1,0 +1,51 @@
+.center__container{   
+    width: 500px;
+    margin-top: 10px;
+    margin-left: 20%;
+}
+
+.center__container > button{
+    
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.center{
+
+    margin-left: 20%;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.center > h1{
+    margin-bottom: 5px;
+}
+
+.center > table > thead > tr > th{
+    padding: 10px;
+    margin: 10px;
+}
+
+.center > table > tbody > tr > td{
+    padding: 10px;
+    margin: 10px;
+}
+.center > table > tbody > tr > td > button{
+    width: 100px;
+    padding: 5px;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+}
+
+.center > table > tbody > tr > td > button.btn-center-approve{
+    width: 100px;
+    padding: 5px;
+    background-color: limegreen;
+    border-radius: 10px;
+    color: white;
+}

@@ -1,0 +1,59 @@
+.enquiry{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 20%;
+}
+
+.enquiry > table{
+    margin-top: 20px;
+}
+.enquiry > table > thead > th{
+    padding: 10px;
+}
+
+.enquiry > table > tbody > tr > td{
+    padding: 10px;
+}
+.enquiry > table > tbody > tr > td > button.enqBtn__delete{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-weight: 800;
+    border-radius: 10px;
+}
+.enquiry > button{
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 50px;
+}
+
+.enquiry > div.enquiry__form > form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.enquiry > div.enquiry__form > form > input{
+    border-radius: 10px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.enquiry > div.enquiry__form > form > label{
+    margin-bottom: 5px;
+}
+
+.enquiry > div.enquiry__form > form > input.submit__btn{
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 20px;
+    height: 30px;
+    margin-top: 10px;
+}
+.enquiry > div.enquiry__form > h1{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,66 @@
+.student{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+
+.student > .student__form{
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+} 
+.student > .student__form > form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.student > .student__form > form > div{
+    margin-bottom: 10px;
+}
+
+.student > .student__form > form > label{
+    margin-bottom: 10px;
+}
+
+.student > .student__form > form > div > label{
+    margin-left: 10px;
+}
+
+.student > .student__form > form > div > input{
+    margin-left: 10px;
+}
+
+.student > .student__form > form > input{
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.student > .student__form > form > input.submit{
+    background-color: green;
+    color: white;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.student > div > table{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.student > div > table > thead > th{
+    padding: 10px;
+}
+
+.student > div > table > tbody > tr > td{
+    padding: 10px;
+}
+
+.student > div > table > tbody > tr > td > button{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+}

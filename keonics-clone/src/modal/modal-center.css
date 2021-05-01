@@ -1,0 +1,51 @@
+.modal{
+  position: fixed; 
+  z-index: 1; 
+  border-radius: 20px;
+  left: 0;
+  top: 0;
+  width: 500px;
+  padding: 20px;
+  margin-left: 30%;
+  margin-top: 10%;
+  overflow: auto;
+  border: 1px solid black;
+  background-color: lightgray;
+}
+
+.modal > form{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal > form > input{
+ 
+    border-radius: 5px;
+    height: 20px;
+    margin-top: 10px;
+
+}
+
+.modal > form > .submit__button{
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    height: 30px;
+    color: white;
+    font-size: 300;
+}
+
+.modal > form > label{
+    margin-top: 10px;
+}
+
+.modal > button{
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    height: 30px;
+    color: white;
+    font-size: 300;
+}

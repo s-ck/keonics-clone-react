@@ -1,0 +1,23 @@
+.users{
+    margin-top: 50px;
+    margin-left: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.users > table > thead > tr > th{
+    padding: 10px;
+    margin: 10px;
+}
+
+.users > table > thead > th{
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.users > table > tbody > tr > td{
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}

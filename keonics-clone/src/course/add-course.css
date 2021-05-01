@@ -1,0 +1,36 @@
+.addCourse{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 20%;
+}
+
+.addCourse > form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.addCourse > form > lable{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.addCourse > form > input{
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.addCourse > form > input.btn-submit{
+    background-color: #f0c14b;
+    border-color: #a88734 #9c7e31 #846a29;
+    color:#111;
+}
+

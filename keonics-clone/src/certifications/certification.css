@@ -1,0 +1,46 @@
+.certification{
+    display: flex;
+    flex-direction: row;
+}
+
+.certification > div.form__certifiction{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-top: 2%;
+    margin-left: 5%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.certification > div.form__certifiction > h1{
+    margin-bottom: 10px;
+}
+
+.certification > div.form__certifiction > form > input{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 30px;
+}
+
+.certification > div.table{
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.certification > div.table > thead > th{
+    padding: 10px;
+}
+
+.certification > div.table > tbody > tr > td{
+    padding: 10px;
+}
+
+.certification > div.form__certifiction > form > input.disable{
+    background-color: lightgray;
+    color: black;
+}
+

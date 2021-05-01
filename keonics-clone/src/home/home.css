@@ -1,0 +1,32 @@
+.home > nav {
+
+    background-color: tomato;
+}
+
+.home > nav > ul{
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.home > nav > ul > li > a{
+    
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+.home > nav > ul > li{ 
+
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+
+}
+
+.home > nav > ul > li > a.logout{
+    padding-left: 100px;
+}

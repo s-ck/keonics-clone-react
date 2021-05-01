@@ -1,0 +1,52 @@
+.payment{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 20%;
+    width: 500px;
+}
+
+.payment > table{
+    margin-left: 20px;
+}
+
+.payment > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.payment > div.payment__form{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.payment > div.payment__form > form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.payment > div.payment__form > form > label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.payment > div.payment__form > form > input{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 20px;
+}
+
+.payment > div.payment__form > form > input.submit{
+    background-color: green;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+}
+.payment > table > thead > th{
+    padding: 10px;
+}
+
+.payment > table >tbody > tr > td{
+    padding: 10px;
+}

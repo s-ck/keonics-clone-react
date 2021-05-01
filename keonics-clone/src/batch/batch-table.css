@@ -1,0 +1,19 @@
+.table{
+    margin-top: 20px;
+    margin-left: 15%;
+}
+
+.table > table > thead > th{
+    padding: 10px;
+}
+
+.table > table > tbody > tr > td{
+    padding: 10px;
+}
+
+.table > table > tbody > tr > td > button{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+}

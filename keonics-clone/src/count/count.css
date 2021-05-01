@@ -1,0 +1,107 @@
+.count{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-left: 0%;
+    justify-content: space-evenly;
+}
+
+.count > div.div__count > span{
+    margin-top: 10px;
+}
+
+.count > div.div__count1{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.count > div.div__count2{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.count > div.div__count3{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.count > div.div__count4{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.count > div.div__count5{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.count > div.div__count6{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#count1:hover{
+    height: 100px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+#count2:hover{
+    height: 100px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+#count3:hover{
+    height: 100px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+#count4:hover{
+    height: 100px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+#count5:hover{
+    height: 100px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+#count6:hover{
+    height: 100px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}

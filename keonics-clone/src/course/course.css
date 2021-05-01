@@ -1,0 +1,44 @@
+.course{
+
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 30%;
+
+}
+
+.course > table > thead > th{
+
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.course > table > tbody > tr > td{
+
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.course > a > button{
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #008CBA;
+    color: white;
+    font-weight: 500;
+}
+.course > h2{
+    margin-bottom: 10px;
+}
+
+.course > table > tbody > tr > td > button{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
