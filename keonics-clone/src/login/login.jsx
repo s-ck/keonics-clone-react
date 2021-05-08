@@ -28,6 +28,20 @@ class Login extends React.Component{
                 localStorage.setItem("token",res.data.token);
             }
             if(localStorage.getItem("token") !== null){
+                if(localStorage.getItem("user_role") === 'center'){
+                    axios({
+                        'method':'get',
+                        'url':BASE_URL+'/centers/'+localStorage.getItem("user_id"),
+                        headers:{
+                            'Authorization': "Bearer "+localStorage.getItem("token")
+                        }
+                    }).then(centerdata => {
+                        localStorage.setItem("center_id",centerdata.data[0].id);
+                    }).catch(error =>{
+                        alert(error.message);
+                    })
+                }
+
                 this.props.history.push("/home");
             }
         })

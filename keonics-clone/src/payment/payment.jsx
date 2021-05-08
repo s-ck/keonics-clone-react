@@ -28,7 +28,7 @@ class Payment extends React.Component{
         }).then(res => {
             let centers = []
             res.data.map(row => {
-                centers.push({"value":row.id,"label":row.centername})
+                centers.push({"value":row[0],"label":row[1]})
             })
             this.setState({centers:centers})
         }).catch(error =>{

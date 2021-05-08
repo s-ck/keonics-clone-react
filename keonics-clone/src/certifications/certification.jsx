@@ -28,8 +28,8 @@ class Certification extends React.Component{
             }).then(res => {
                 let certification = []
                 res.data.map(row => {
-                    certification.push({"id":row[0],"student":row[4],"course":row[5],
-                                        "status":row[6],"center":row[7]});
+                    certification.push({"id":row[0],"student":row[1],"course":row[2],
+                                        "status":row[3],"center":row[4]});
                 })
                 this.setState({certifications:certification});
             }).catch(error => {
@@ -155,7 +155,7 @@ class Certification extends React.Component{
     deleteCertification = (id) => {
         axios({
             method:'delete',
-            url:BASE_URL+"/deletecertification/"+id,
+            url:BASE_URL+`/deletecertification/`+id,
             headers:{
                 'Authorization': "Bearer "+localStorage.getItem("token")
             }

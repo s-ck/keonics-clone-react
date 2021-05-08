@@ -38,7 +38,12 @@ class Center extends React.Component{
                     'Authorization': "Bearer "+localStorage.getItem("token")
                 }
             }).then(res => {
-                this.setState({centers:res.data})
+                let centers = []
+                res.data.map(row =>{
+                    centers.push({"id":row[0],"centername":row[1],"city":row[2],
+                                  "mobile":row[3],"status":row[4]})
+                })
+                this.setState({centers:centers})
             }).catch(error =>{
                 alert(error.message);
             })

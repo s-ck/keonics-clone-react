@@ -117,7 +117,6 @@ class Enquiry extends React.Component{
                 alert("This center is not approved");
             }
         }).catch(error => {
-            console.log(error.status);
             alert(error.message);
         })
         this.componentDidMount();

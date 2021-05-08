@@ -22,55 +22,57 @@ class Student extends React.Component{
     }
 
     componentDidMount(){
-        axios({
-            'method':'get',
-            'url':BASE_URL+'/centers/'+localStorage.getItem("user_id"),
-            headers:{
-                'Authorization': "Bearer "+localStorage.getItem("token")
-            }
-        }).then(res => {
-            localStorage.setItem("center_id",res.data[0].id);
-        }).catch(error =>{
-            alert(error.message);
-        })
-    if(localStorage.getItem("user_role") === 'center'){    
-        axios({
-            method:'get',
-            url:BASE_URL+"/listStudents/"+localStorage.getItem("user_id"),
-            headers:{
-                'Authorization': "Bearer "+localStorage.getItem("token")
-            }
-        }).then(res => {
-            let students = []
-            res.data.map(row => {
-                students.push({"id":row[0],"firstname":row[1],
-                "lastname":row[2],"email":row[3],"mobile":row[4],
-                "address":row[6]+" "+row[7],"city":row[8],"pincode":row[9],"center":row[10]})
+        if(localStorage.getItem("user_role") === "center"){
+            axios({
+                'method':'get',
+                'url':BASE_URL+'/centers/'+localStorage.getItem("user_id"),
+                headers:{
+                    'Authorization': "Bearer "+localStorage.getItem("token")
+                }
+            }).then(res => {
+                localStorage.setItem("center_id",res.data[0].id);
+            }).catch(error =>{
+                alert(error.message);
             })
-            this.setState({studentList:students})
-        }).catch(error => {
-            alert(error.message)
-        })
-    }
-    else{
-        axios({
-            method:'get',
-            url:BASE_URL+"/listStudents",
-            headers:{
-                'Authorization': "Bearer "+localStorage.getItem("token")
-            }
-        }).then(res => {
-            let students = []
-            res.data.map(row => {
-                students.push({"id":row[0],"firstname":row[1],
-                "lastname":row[2],"email":row[3],"mobile":row[4],
-                "address":row[6]+" "+row[7],"city":row[8],"pincode":row[9],"center":row[10]})
+        }
+        if(localStorage.getItem("user_role") === 'center'){    
+            axios({
+                method:'get',
+                url:BASE_URL+"/listStudents/"+localStorage.getItem("user_id"),
+                headers:{
+                    'Authorization': "Bearer "+localStorage.getItem("token")
+                }
+            }).then(res => {
+                let students = []
+                res.data.map(row => {
+                    students.push({"id":row[0],"firstname":row[1],
+                    "lastname":row[2],"email":row[3],"mobile":row[4],
+                    "address":row[6]+" "+row[7],"city":row[8],"pincode":row[9],"center":row[10]})
+                })
+                this.setState({studentList:students})
+            }).catch(error => {
+                alert(error.message)
             })
-            this.setState({studentList:students})
-        }).catch(error => {
-            alert(error.message)
-        })
-    }
+        }
+        else{
+            axios({
+                method:'get',
+                url:BASE_URL+"/listStudents",
+                headers:{
+                    'Authorization': "Bearer "+localStorage.getItem("token")
+                }
+            }).then(res => {
+                let students = []
+                res.data.map(row => {
+                    students.push({"id":row[0],"firstname":row[1],
+                    "lastname":row[2],"email":row[3],"mobile":row[4],
+                    "address":row[6]+" "+row[7],"city":row[8],"pincode":row[9],"center":row[10]})
+                })
+                this.setState({studentList:students})
+            }).catch(error => {
+                alert(error.message)
+            })
+        }
     }
 
     handleSubmit = (e) => {

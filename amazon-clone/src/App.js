@@ -17,15 +17,18 @@ const promise = loadStripe("pk_test_51IZGVJSEqhJWXFAmN0rKlHvQLBYMwFRvil7DWIZqFiV
 function App() {
 
   const [{}, dispatch] = useStateValue();
+  
+  console.log(useStateValue().dispatch);
 
   useEffect(() => {
     auth.onAuthStateChanged(authUser => {
-      if(authUser){
+      if(authUser){  
         dispatch({
           type:"SET_USER",
           user:authUser
         })
       }else{
+		console.log(dispatch);  
         dispatch({
           type:"SET_USER",
           user:null

@@ -31,7 +31,6 @@ const Modal = ({users}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(user)
         axios({
             method:'post',
             url:BASE_URL+'/addCenter',
