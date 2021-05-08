@@ -41,7 +41,7 @@ class Center extends React.Component{
                 let centers = []
                 res.data.map(row =>{
                     centers.push({"id":row[0],"centername":row[1],"city":row[2],
-                                  "mobile":row[3],"status":row[4]})
+                                  "mobile":row[3],"status":row[4],"user":row[5]})
                 })
                 this.setState({centers:centers})
             }).catch(error =>{
@@ -89,6 +89,7 @@ class Center extends React.Component{
     }
 
     approveCenter = row => {
+        console.log(row)
         axios({
             method:'post',
             url:BASE_URL+'/addCenter',
@@ -101,7 +102,9 @@ class Center extends React.Component{
                 "mobile":row.mobile,
                 "city":row.city,
                 "status":'approved',
-                "user":row.user
+                "user":{
+                    "id":row.user
+                }
             }
         }).then(res => {
             alert("Center updated successfully "+res.data.id);
